@@ -1,5 +1,6 @@
 #include <behaviors/mouse_keys.dtsi>
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/rgb.h>
@@ -133,14 +134,14 @@
             label = "KB&CTRL";
             display-name = "KB&CTRL";
             bindings = <
-&none  &mkp MB5    &mwh SCROLL_LEFT   &mmv MOVE_UP    &msc SCROLL_UP    &mkp MCLK    &mmv MOVE_UP     &kp C_BRI_MIN  &kp K_MUTE    &kp C_RW  &none  &none  &none
-&none  &mkp MB4    &mmv MOVE_LEFT     &mmv MOVE_DOWN  &mmv MOVE_RIGHT   &mkp LCLK    &mmv MOVE_DOWN   &kp C_BRI_DN   &kp C_VOL_DN  &kp C_PP  &none  &none  &none
-&none  &sys_reset  &mwh SCROLL_RIGHT  &bootloader     &msc SCROLL_DOWN  &mkp RCLK    &mmv MOVE_LEFT   &kp C_BRI_UP   &kp C_VOL_UP  &kp C_FF  &none  &none  &none
-                   &kp C_MUTE         &none           &none             &none        &mmv MOVE_RIGHT  &none          &none         &none
-                                                                                     &mkp LCLK
+&bt BT_CLR       &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_PRV       &bt BT_NXT         &mmv MOVE_UP     &kp C_BRI_MIN  &kp K_MUTE    &kp C_RW  &none  &none  &none
+&rgb_ug RGB_ON   &rgb_ug RGB_EFF  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI    &mmv MOVE_DOWN   &kp C_BRI_DN   &kp C_VOL_DN  &kp C_PP  &none  &none  &none
+&rgb_ug RGB_OFF  &rgb_ug RGB_EFR  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD    &mmv MOVE_LEFT   &kp C_BRI_UP   &kp C_VOL_UP  &kp C_FF  &none  &none  &none
+                                  &kp C_MUTE       &trans           &none            &none              &mmv MOVE_RIGHT  &trans         &trans        &trans
+                                                                                                        &mkp LCLK
             >;
 
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&rgb_encoder>;
         };
     };
 };
