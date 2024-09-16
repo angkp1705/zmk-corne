@@ -105,9 +105,9 @@
             display-name = "MS&NAV";
             label = "MS&NAV";
             bindings = <
-&trans  &mkp MB5    &kp K_SCROLL_UP    &mmv MOVE_UP    &mwh MOVE_LEFT   &mkp MCLK    &mmv MOVE_UP     &mkp MCLK  &kp HOME        &kp UP_ARROW    &kp PG_UP        &none  &kp PSCRN
+&trans  &mkp MB5    &kp K_SCROLL_UP    &mmv MOVE_UP    &none            &mkp MCLK    &mmv MOVE_UP     &mkp MCLK  &kp HOME        &kp UP_ARROW    &kp PG_UP        &none  &kp PSCRN
 &trans  &mkp MB4    &mmv MOVE_LEFT     &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp LCLK    &mmv MOVE_DOWN   &mkp LCLK  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none  &none
-&trans  &sys_reset  &kp K_SCROLL_DOWN  &none           &mwh MOVE_RIGHT  &mkp RCLK    &mmv MOVE_LEFT   &mkp RCLK  &kp END         &kp INS         &kp PG_DN        &none  &none
+&trans  &sys_reset  &kp K_SCROLL_DOWN  &none           &none            &mkp RCLK    &mmv MOVE_LEFT   &mkp RCLK  &kp END         &kp INS         &kp PG_DN        &none  &none
                     &kp C_MUTE         &trans          &trans           &trans       &mmv MOVE_RIGHT  &none      &trans          &none
                                                                                      &mkp LCLK
             >;
