@@ -118,11 +118,11 @@
         super_layer {
             display-name = "MOUSE";
             bindings = <
-&trans  &kp F1      &kp F2      &kp F3       &kp F4     &kp F5      &mmv MOVE_UP     &kp F6       &kp F7     &kp F8       &kp F9      &kp F10          &kp F11
-&trans  &trans      &mkp LCLK   &mkp MCLK    &mkp RCLK  &mkp MB4    &mmv MOVE_DOWN   &bootloader  &mkp LCLK  &mkp MCLK    &mkp RCLK   &kp PRINTSCREEN  &kp F12
-&trans  &sys_reset  &soft_off   &bootloader  &trans     &mkp MB5    &mmv MOVE_LEFT   &trans       &trans     &bootloader  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
-                    &kp C_MUTE  &trans       &trans     &trans      &mmv MOVE_RIGHT  &trans       &trans     &trans
-                                                                    &mkp LCLK
+&trans  &mkp MB5    &mwh SCROLL_LEFT   &mmv MOVE_UP    &msc SCROLL_UP    &mkp MCLK    &mmv MOVE_UP     &mkp MCLK  &kp HOME  &kp UP    &kp PG_UP  &none  &kp PSCRN
+&trans  &mkp MB4    &mmv MOVE_LEFT     &mmv MOVE_DOWN  &mmv MOVE_RIGHT   &mkp LCLK    &mmv MOVE_DOWN   &mkp LCLK  &kp LEFT  &kp DOWN  &kp RIGHT  &none  &kp PAUSE_BREAK
+&trans  &sys_reset  &mwh SCROLL_RIGHT  &bootloader     &msc SCROLL_DOWN  &mkp RCLK    &mmv MOVE_LEFT   &mkp RCLK  &kp END   &kp INS   &kp PG_DN  &none  &kp SLCK
+                    &kp C_MUTE         &trans          &trans            &trans       &mmv MOVE_RIGHT  &none      &trans    &none
+                                                                                      &mkp LCLK
             >;
 
             label = "MOUSE";
