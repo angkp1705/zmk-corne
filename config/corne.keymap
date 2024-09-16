@@ -1,7 +1,6 @@
 #include <behaviors/mouse_keys.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/rgb.h>
@@ -106,19 +105,19 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp N1           &kp N2          &kp N3             &kp N4        &kp N5             &mmv MOVE_UP     &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp BSPC
-&trans  &bt BT_CLR_ALL   &bt BT_SEL 0    &bt BT_SEL 1       &bt BT_SEL 2  &bt BT_SEL 3       &mmv MOVE_DOWN   &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
-&trans  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &ext_power EP_OFF  &trans        &rgb_ug RGB_EFF    &mmv MOVE_LEFT   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
-                         &kp C_MUTE      &trans             &trans        &trans             &mmv MOVE_RIGHT  &kp INS          &kp DEL          &trans
-                                                                                             &mkp LCLK
+&kp CAPS   &kp F1  &kp F2      &kp F3   &kp F4   &none              &mmv MOVE_UP     &kp PERCENT  &kp N7  &kp N8   &kp N9  &kp MINUS  &kp BSPC
+&trans     &kp F5  &kp F6      &kp F7   &kp F8   &bt BT_SEL 3       &mmv MOVE_DOWN   &none        &kp N4  &kp N5   &kp N6  &kp PLUS   &kp SLASH
+&kp K_APP  &kp F9  &kp F10     &kp F11  &kp F12  &rgb_ug RGB_EFF    &mmv MOVE_LEFT   &none        &kp N1  &kp N2   &kp N3  &kp ENTER  &kp ASTRK
+                   &kp C_MUTE  &trans   &none    &trans             &mmv MOVE_RIGHT  &trans       &kp N0  &kp DOT
+                                                                    &mkp LCLK
             >;
 
             label = "NUMBER";
             sensor-bindings = <&scroll_encoder>;
         };
 
-        layer_3 {
-            display-name = "Fn";
+        super_layer {
+            display-name = "MOUSE";
             bindings = <
 &trans  &kp F1      &kp F2      &kp F3       &kp F4     &kp F5      &mmv MOVE_UP     &kp F6       &kp F7     &kp F8       &kp F9      &kp F10          &kp F11
 &trans  &trans      &mkp LCLK   &mkp MCLK    &mkp RCLK  &mkp MB4    &mmv MOVE_DOWN   &bootloader  &mkp LCLK  &mkp MCLK    &mkp RCLK   &kp PRINTSCREEN  &kp F12
