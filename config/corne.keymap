@@ -112,7 +112,7 @@
                                                                                      &mkp LCLK
             >;
 
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
         hyper_layer {
