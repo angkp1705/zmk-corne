@@ -62,7 +62,6 @@
         default_layer {
             display-name = "QWERTY";
             label = "QWERTY";
-
             bindings = <
 &kp TAB   &kp Q  &kp W     &kp E        &kp R            &kp T        &kp UP_ARROW     &kp Y        &kp U             &kp I            &kp O    &kp P     &kp ESC
 &kp LALT  &kp A  &kp S     &kp D        &kp F            &kp G        &kp DOWN_ARROW   &kp H        &kp J             &kp K            &kp L    &kp SEMI  &kp SQT
@@ -77,7 +76,6 @@
         lower_layer {
             display-name = "SYMBOL";
             label = "SYMBOL";
-
             bindings = <
 &none   &kp EXCL  &kp AT      &kp HASH  &kp DLLR  &kp PRCNT    &mmv MOVE_UP     &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &none
 &trans  &none     &none       &none     &none     &none        &mmv MOVE_DOWN   &kp GRAVE  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &none
@@ -92,7 +90,6 @@
         raise_layer {
             display-name = "NUM&FN";
             label = "NUM&FN";
-
             bindings = <
 &kp CAPS   &kp F1  &kp F2      &kp F3   &kp F4   &none     &mmv MOVE_UP     &kp PERCENT  &kp N7  &kp N8   &kp N9  &kp MINUS  &kp BSPC
 &trans     &kp F5  &kp F6      &kp F7   &kp F8   &none     &mmv MOVE_DOWN   &none        &kp N4  &kp N5   &kp N6  &kp PLUS   &kp SLASH
@@ -107,11 +104,10 @@
         super_layer {
             display-name = "MS&NAV";
             label = "MS&NAV";
-
             bindings = <
 &trans  &mkp MB5    &mwh SCROLL_LEFT   &mmv MOVE_UP    &msc SCROLL_UP    &mkp MCLK    &mmv MOVE_UP     &mkp MCLK  &kp HOME        &kp UP_ARROW    &kp PG_UP        &none  &kp PSCRN
-&trans  &mkp MB4    &mmv MOVE_LEFT     &mmv MOVE_DOWN  &mmv MOVE_RIGHT   &mkp LCLK    &mmv MOVE_DOWN   &mkp LCLK  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none  &kp PAUSE_BREAK
-&trans  &sys_reset  &mwh SCROLL_RIGHT  &none           &msc SCROLL_DOWN  &mkp RCLK    &mmv MOVE_LEFT   &mkp RCLK  &kp END         &kp INS         &kp PG_DN        &none  &kp SLCK
+&trans  &mkp MB4    &mmv MOVE_LEFT     &mmv MOVE_DOWN  &mmv MOVE_RIGHT   &mkp LCLK    &mmv MOVE_DOWN   &mkp LCLK  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none  &none
+&trans  &sys_reset  &mwh SCROLL_RIGHT  &none           &msc SCROLL_DOWN  &mkp RCLK    &mmv MOVE_LEFT   &mkp RCLK  &kp END         &kp INS         &kp PG_DN        &none  &none
                     &kp C_MUTE         &trans          &trans            &trans       &mmv MOVE_RIGHT  &none      &trans          &none
                                                                                       &mkp LCLK
             >;
@@ -122,7 +118,6 @@
         hyper_layer {
             label = "KB&CTRL";
             display-name = "KB&CTRL";
-
             bindings = <
 &bt BT_CLR       &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_PRV       &bt BT_NXT         &mmv MOVE_UP     &kp C_BRI_MIN  &kp K_MUTE    &kp C_RW  &none  &none  &none
 &rgb_ug RGB_ON   &rgb_ug RGB_EFF  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI    &mmv MOVE_DOWN   &kp C_BRI_DN   &kp C_VOL_DN  &kp C_PP  &none  &none  &none
