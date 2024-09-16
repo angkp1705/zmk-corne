@@ -112,7 +112,7 @@
                                                                     &mkp LCLK
             >;
 
-            label = "NUMBER";
+            label = "NUM&FN";
             sensor-bindings = <&scroll_encoder>;
         };
 
@@ -126,7 +126,7 @@
                                                                     &mkp LCLK
             >;
 
-            label = "FN";
+            label = "MOUSE";
             sensor-bindings = <&scroll_encoder>;
         };
     };
