@@ -152,7 +152,7 @@ layers:
   - '&mkp MB5'
   - SCROLL UP
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - '&mwh MOVE_LEFT'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:mouse-scroll-wheel$$
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-scroll-wheel$$
@@ -178,7 +178,7 @@ layers:
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - SCROLL DOWN
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '&mwh MOVE_RIGHT'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:mouse-right-click-outline$$
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-right-click-outline$$
