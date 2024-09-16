@@ -53,6 +53,7 @@
 
         default_layer {
             display-name = "QWERTY";
+            label = "QWERTY";
 
             // --------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |                ↑    |  Y  |  U   |  I  |  O  |  P  | BKSP |      &kp UP_ARROW 
@@ -68,13 +69,13 @@
                  &kp C_MUTE  &lt 0 PG_UP  &lt 2 BACKSPACE  &lt 1 DEL    &kp RIGHT_ARROW  &mt RSHIFT SPACE  &lt 3 ENTER  &mt RCTRL PG_DN
                                                                         &kp ENTER
             >;
-
-            label = "QWERTY";
+            
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         lower_layer {
             display-name = "SYMBOL";
+            label = "SYMBOL";
 
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
@@ -89,13 +90,13 @@
                   &trans  &none     &trans    &trans       &mmv MOVE_RIGHT  &trans     &trans     &trans
                                                            &mkp LCLK
             >;
-
-            label = "SYMBOL";
+            
             sensor-bindings = <&scroll_encoder>;
         };
 
         raise_layer {
             display-name = "NUM&FN";
+            label = "NUM&FN";
 
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
@@ -110,13 +111,14 @@
                    &kp C_MUTE  &trans   &none    &trans    &mmv MOVE_RIGHT  &trans       &kp N0  &kp DOT
                                                            &mkp LCLK
             >;
-
-            label = "NUM&FN";
+            
             sensor-bindings = <&scroll_encoder>;
         };
 
         super_layer {
-            display-name = "MOUSE";
+            display-name = "MS&NAV";
+            label = "MS&NAV";
+
             bindings = <
 &trans  &mkp MB5    &mwh SCROLL_LEFT   &mmv MOVE_UP    &msc SCROLL_UP    &mkp MCLK    &mmv MOVE_UP     &mkp MCLK  &kp HOME  &kp UP    &kp PG_UP  &none  &kp PSCRN
 &trans  &mkp MB4    &mmv MOVE_LEFT     &mmv MOVE_DOWN  &mmv MOVE_RIGHT   &mkp LCLK    &mmv MOVE_DOWN   &mkp LCLK  &kp LEFT  &kp DOWN  &kp RIGHT  &none  &kp PAUSE_BREAK
@@ -124,8 +126,7 @@
                     &kp C_MUTE         &trans          &trans            &trans       &mmv MOVE_RIGHT  &none      &trans    &none
                                                                                       &mkp LCLK
             >;
-
-            label = "MOUSE";
+            
             sensor-bindings = <&scroll_encoder>;
         };
     };
