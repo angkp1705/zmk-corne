@@ -56,6 +56,15 @@
         };
     };
 
+    macros {
+        input_switch: input_switch {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LWIN &kp SPACE>;
+            label = "INPUT_SWITCH";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -84,7 +93,7 @@
                                                                &mkp LCLK
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         raise_layer {
@@ -112,7 +121,7 @@
                                                                                      &mkp LCLK
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         hyper_layer {
