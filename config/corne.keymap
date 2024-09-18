@@ -72,11 +72,11 @@
             display-name = "QWERTY";
             label = "QWERTY";
             bindings = <
-&kp TAB   &kp Q  &kp W     &kp E        &kp R            &kp T        &kp UP_ARROW     &kp Y        &kp U             &kp I            &kp O    &kp P     &kp ESC
-&kp LALT  &kp A  &kp S     &kp D        &kp F            &kp G        &kp DOWN_ARROW   &kp H        &kp J             &kp K            &kp L    &kp SEMI  &kp SQT
-&kp LWIN  &kp Z  &kp X     &kp C        &kp V            &kp B        &kp LEFT_ARROW   &kp N        &kp M             &kp COMMA        &kp DOT  &kp FSLH  &kp BACKSLASH
-                 &kp HOME  &lt 4 PG_UP  &lt 2 BACKSPACE  &lt 1 DEL    &kp RIGHT_ARROW  &lt 3 ENTER  &mt RSHIFT SPACE  &mt RCTRL PG_DN
-                                                                      &kp ENTER
+&kp TAB   &kp Q        &kp W     &kp E        &kp R                &kp T        &kp UP_ARROW     &kp Y        &kp U             &kp I        &kp O    &kp P           &kp ESC
+&kp LALT  &kp A        &kp S     &kp D        &kp F                &kp G        &kp DOWN_ARROW   &kp H        &kp J             &kp K        &kp L    &kp SEMI        &kp SQT
+&kp LWIN  &mt LSHFT Z  &kp X     &kp C        &kp V                &kp B        &kp LEFT_ARROW   &kp N        &kp M             &kp COMMA    &kp DOT  &mt RSHFT FSLH  &kp BACKSLASH
+                       &kp HOME  &lt 2 PG_UP  &mt LCTRL BACKSPACE  &lt 1 DEL    &kp RIGHT_ARROW  &lt 3 ENTER  &mt RSHIFT SPACE  &lt 4 PG_DN
+                                                                                &kp ENTER
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -89,7 +89,7 @@
 &none          &kp EXCL  &kp AT      &kp HASH  &kp DLLR  &kp PRCNT    &mmv MOVE_UP     &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &none
 &kp LG(SPACE)  &none     &none       &none     &none     &none        &mmv MOVE_DOWN   &kp GRAVE  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &none
 &kp LC(SPACE)  &none     &none       &none     &none     &none        &mmv MOVE_LEFT   &kp TILDE  &kp UNDER  &kp PLUS   &kp LBRC  &kp RBRC  &none
-                         &kp K_MUTE  &none     &trans    &trans       &mmv MOVE_RIGHT  &trans     &trans     &trans
+                         &kp K_MUTE  &none     &none     &trans       &mmv MOVE_RIGHT  &trans     &trans     &trans
                                                                       &mkp LCLK
             >;
 
@@ -114,11 +114,11 @@
             display-name = "MS&NAV";
             label = "MS&NAV";
             bindings = <
-&trans  &mkp MB5    &kp K_SCROLL_UP    &mmv MOVE_UP    &none            &mkp MCLK    &mmv MOVE_UP     &mkp MCLK  &kp HOME        &kp UP_ARROW    &kp PG_UP        &none  &kp PSCRN
-&trans  &mkp MB4    &mmv MOVE_LEFT     &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp LCLK    &mmv MOVE_DOWN   &mkp LCLK  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none  &none
-&trans  &sys_reset  &kp K_SCROLL_DOWN  &none           &none            &mkp RCLK    &mmv MOVE_LEFT   &mkp RCLK  &kp END         &kp INS         &kp PG_DN        &none  &none
-                    &kp C_MUTE         &trans          &trans           &trans       &mmv MOVE_RIGHT  &none      &trans          &none
-                                                                                     &mkp LCLK
+&trans  &mkp MB5  &kp K_SCROLL_UP    &mmv MOVE_UP    &none            &mkp MCLK    &mmv MOVE_UP     &mkp MCLK  &kp HOME        &kp UP_ARROW    &kp PG_UP        &none  &kp PSCRN
+&trans  &mkp MB4  &mmv MOVE_LEFT     &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp LCLK    &mmv MOVE_DOWN   &mkp LCLK  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none  &kp INS
+&trans  &none     &kp K_SCROLL_DOWN  &none           &none            &mkp RCLK    &mmv MOVE_LEFT   &mkp RCLK  &kp END         &none           &kp PG_DN        &none  &none
+                  &kp C_MUTE         &trans          &trans           &trans       &mmv MOVE_RIGHT  &none      &trans          &none
+                                                                                   &mkp LCLK
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
