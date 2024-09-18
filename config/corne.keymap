@@ -92,7 +92,7 @@
             label = "NUM&FN";
             bindings = <
 &kp CAPS   &kp F1  &kp F2      &kp F3   &kp F4   &none     &mmv MOVE_UP     &kp PERCENT  &kp N7  &kp N8   &kp N9  &kp MINUS  &kp BSPC
-&trans     &kp F5  &kp F6      &kp F7   &kp F8   &none     &mmv MOVE_DOWN   &none        &kp N4  &kp N5   &kp N6  &kp PLUS   &kp SLASH
+&trans     &kp F5  &kp F6      &kp F7   &kp F8   &none     &mmv MOVE_DOWN   &kp K_CALC   &kp N4  &kp N5   &kp N6  &kp PLUS   &kp SLASH
 &kp K_APP  &kp F9  &kp F10     &kp F11  &kp F12  &none     &mmv MOVE_LEFT   &none        &kp N1  &kp N2   &kp N3  &kp ENTER  &kp ASTRK
                    &kp C_MUTE  &trans   &none    &trans    &mmv MOVE_RIGHT  &trans       &kp N0  &kp DOT
                                                            &mkp LCLK
