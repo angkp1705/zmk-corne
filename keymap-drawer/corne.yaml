@@ -119,7 +119,7 @@ layers:
   - F8
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - CALC
   - {t: '4', s: $}
   - {t: '5', s: '%'}
   - {t: '6', s: ^}
