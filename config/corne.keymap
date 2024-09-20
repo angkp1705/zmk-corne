@@ -77,11 +77,11 @@
             display-name = "SYMBOL";
             label = "SYMBOL";
             bindings = <
-&none          &kp EXCL  &kp AT      &kp HASH  &kp DLLR  &kp PRCNT    &mmv MOVE_UP     &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &none
-&kp LG(SPACE)  &none     &none       &none     &none     &none        &mmv MOVE_DOWN   &kp GRAVE  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &none
-&kp LC(SPACE)  &none     &none       &none     &none     &none        &mmv MOVE_LEFT   &kp TILDE  &kp UNDER  &kp PLUS   &kp LBRC  &kp RBRC  &none
-                         &kp K_MUTE  &none     &none     &trans       &mmv MOVE_RIGHT  &trans     &trans     &trans
-                                                                      &mkp LCLK
+&none  &kp EXCL  &kp AT      &kp HASH  &kp DLLR  &kp PRCNT    &mmv MOVE_UP     &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &none
+&none  &none     &none       &none     &none     &none        &mmv MOVE_DOWN   &kp GRAVE  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &none
+&none  &none     &none       &none     &none     &none        &mmv MOVE_LEFT   &kp TILDE  &kp UNDER  &kp PLUS   &kp LBRC  &kp RBRC  &none
+                 &kp K_MUTE  &none     &none     &trans       &mmv MOVE_RIGHT  &trans     &trans     &trans
+                                                              &mkp LCLK
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -91,11 +91,11 @@
             display-name = "FN&NUM";
             label = "FN&NUM";
             bindings = <
-&kp CAPS   &kp F1  &kp F2      &kp F3   &kp F4   &none     &mmv MOVE_UP     &kp PERCENT  &kp N7  &kp N8   &kp N9  &kp MINUS  &kp BSPC
-&trans     &kp F5  &kp F6      &kp F7   &kp F8   &none     &mmv MOVE_DOWN   &kp K_CALC   &kp N4  &kp N5   &kp N6  &kp PLUS   &kp SLASH
-&kp K_APP  &kp F9  &kp F10     &kp F11  &kp F12  &none     &mmv MOVE_LEFT   &none        &kp N1  &kp N2   &kp N3  &kp ENTER  &kp ASTRK
-                   &kp C_MUTE  &trans   &none    &trans    &mmv MOVE_RIGHT  &trans       &kp N0  &kp DOT
-                                                           &mkp LCLK
+&kp CAPS       &kp F1  &kp F2      &kp F3   &kp F4   &none     &mmv MOVE_UP     &kp PERCENT          &kp N7  &kp N8   &kp N9  &kp MINUS  &kp BSPC
+&kp LG(SPACE)  &kp F5  &kp F6      &kp F7   &kp F8   &none     &mmv MOVE_DOWN   &kp C_AL_CALCULATOR  &kp N4  &kp N5   &kp N6  &kp PLUS   &kp SLASH
+&kp LC(SPACE)  &kp F9  &kp F10     &kp F11  &kp F12  &none     &mmv MOVE_LEFT   &none                &kp N1  &kp N2   &kp N3  &kp ENTER  &kp ASTRK
+                       &kp C_MUTE  &trans   &none    &trans    &mmv MOVE_RIGHT  &trans               &kp N0  &kp DOT
+                                                               &mkp LCLK
             >;
 
             sensor-bindings = <&scroll_encoder>;
