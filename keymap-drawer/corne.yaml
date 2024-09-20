@@ -25,8 +25,8 @@ layers:
   - J
   - K
   - L
-  - {t: ;, s: ':'}
-  - {t: '''', s: '"'}
+  - {t: ;, h: '$$mdi:apple-keyboard-control$$', s: ':'}
+  - {t: '''', h: '$$mdi:apple-keyboard-option$$', s: '"'}
   - LWIN
   - {t: Z, h: '$$mdi:apple-keyboard-shift$$'}
   - X
@@ -39,7 +39,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, h: '$$mdi:apple-keyboard-shift$$', s: '?'}
-  - {t: \, s: '|'}
+  - {t: \, h: RWIN, s: '|'}
   - HOME
   - {t: PG UP, h: raise}
   - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-control$$'}
@@ -152,7 +152,7 @@ layers:
   - '&mkp MB5'
   - SCROLL UP
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - '&msc SCROLL_HOR -5'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:mouse-scroll-wheel$$
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-scroll-wheel$$
@@ -178,7 +178,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - SCROLL DOWN
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '&msc SCROLL_HOR 5'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:mouse-right-click-outline$$
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-right-click-outline$$
