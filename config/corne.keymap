@@ -105,11 +105,11 @@
             display-name = "MS&NAV";
             label = "MS&NAV";
             bindings = <
-&trans  &mkp MB5  &kp K_SCROLL_UP    &mmv MOVE_UP    &none            &mkp MCLK    &mmv MOVE_UP     &mkp MCLK  &kp HOME        &kp UP_ARROW    &kp PG_UP        &none  &kp PSCRN
-&trans  &mkp MB4  &mmv MOVE_LEFT     &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp LCLK    &mmv MOVE_DOWN   &mkp LCLK  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none  &kp INS
-&trans  &none     &kp K_SCROLL_DOWN  &none           &none            &mkp RCLK    &mmv MOVE_LEFT   &mkp RCLK  &kp END         &none           &kp PG_DN        &none  &none
-                  &kp C_MUTE         &trans          &trans           &trans       &mmv MOVE_RIGHT  &trans     &none           &none
-                                                                                   &mkp LCLK
+&trans  &mkp MB5  &kp K_SCROLL_UP    &mmv MOVE_UP    &mwh SCROLL_HOR -5  &mkp MCLK    &mmv MOVE_UP     &mkp MCLK  &kp HOME        &kp UP_ARROW    &kp PG_UP        &none  &kp PSCRN
+&trans  &mkp MB4  &mmv MOVE_LEFT     &mmv MOVE_DOWN  &mmv MOVE_RIGHT     &mkp LCLK    &mmv MOVE_DOWN   &mkp LCLK  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none  &kp INS
+&trans  &none     &kp K_SCROLL_DOWN  &none           &mwh SCROLL_HOR 5   &mkp RCLK    &mmv MOVE_LEFT   &mkp RCLK  &kp END         &none           &kp PG_DN        &none  &none
+                  &kp C_MUTE         &trans          &trans              &trans       &mmv MOVE_RIGHT  &trans     &none           &none
+                                                                                      &mkp LCLK
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
