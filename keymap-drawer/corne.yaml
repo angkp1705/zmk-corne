@@ -153,7 +153,7 @@ layers:
   - SCROLL UP
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:mouse-scroll-wheel$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-scroll-wheel$$
   - HOME
@@ -166,7 +166,7 @@ layers:
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - $$mdi:mouse-left-click-outline$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:arrow-left-bold$$
@@ -179,7 +179,7 @@ layers:
   - SCROLL DOWN
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:mouse-right-click-outline$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-right-click-outline$$
   - END
@@ -188,9 +188,9 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:volume-off$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:mouse-scroll-wheel$$
+  - $$mdi:mouse-left-click-outline$$
+  - $$mdi:mouse-right-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - {type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
