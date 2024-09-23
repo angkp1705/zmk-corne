@@ -41,9 +41,9 @@ layers:
   - {t: /, h: '$$mdi:apple-keyboard-shift$$', s: '?'}
   - {t: \, h: RWIN, s: '|'}
   - HOME
-  - {t: PG UP, h: lower}
+  - {t: PG UP, h: raise}
   - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-control$$'}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: raise}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: lower}
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:keyboard-return$$', h: super}
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
@@ -90,9 +90,9 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - '*'
   - MUTE
-  - {type: held}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {type: held}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '0', s: )}
@@ -139,9 +139,9 @@ layers:
   - '}'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - MUTE
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
