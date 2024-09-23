@@ -122,7 +122,7 @@
 &bt BT_CLR       &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_PRV       &bt BT_NXT         &mmv MOVE_UP     &none   &kp K_MUTE    &kp C_RW  &none  &none  &none
 &rgb_ug RGB_ON   &rgb_ug RGB_EFF  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI    &mmv MOVE_DOWN   &none   &kp C_VOL_DN  &kp C_PP  &none  &none  &none
 &rgb_ug RGB_OFF  &rgb_ug RGB_EFR  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD    &mmv MOVE_LEFT   &none   &kp C_VOL_UP  &kp C_FF  &none  &none  &none
-                                  &kp K_MUTE       &trans           &trans           &trans             &mmv MOVE_RIGHT  &trans  &none         &trans
+                                  &rgb_ug RGB_OFF  &trans           &trans           &trans             &mmv MOVE_RIGHT  &trans  &none         &trans
                                                                                                         &mkp LCLK
             >;
 
