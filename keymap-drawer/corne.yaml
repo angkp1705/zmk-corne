@@ -89,7 +89,7 @@ layers:
   - {t: '3', s: '#'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - '*'
-  - MUTE
+  - $$mdi:volume-off$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {type: held}
@@ -138,7 +138,7 @@ layers:
   - '{'
   - '}'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - MUTE
+  - $$mdi:volume-off$$
   - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -187,7 +187,7 @@ layers:
   - PG DN
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - INS
-  - MUTE
+  - $$mdi:volume-off$$
   - $$mdi:mouse-scroll-wheel$$
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:mouse-right-click-outline$$
@@ -204,7 +204,7 @@ layers:
   - {h: '$$mdi:arrow-up-bold$$', s: '$$mdi:bluetooth-connect$$'}
   - {h: '$$mdi:arrow-down-bold$$', s: '$$mdi:bluetooth-connect$$'}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - BRIGHTNESS MAXIMUM
+  - BRI MAX
   - $$mdi:volume-off$$
   - RW
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -230,13 +230,13 @@ layers:
   - RGB HUD
   - RGB SAD
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - $$mdi:brightness-5$$
+  - BRI INC
   - $$mdi:volume-high$$
   - FF
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - RGB OFF
+  - $$mdi:volume-off$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
