@@ -105,11 +105,11 @@
             display-name = "MS&NAV";
             label = "MS&NAV";
             bindings = <
-&trans  &mkp MB5  &none           &mmv MOVE_UP    &none            &none        &mmv MOVE_UP     &mkp MCLK  &kp HOME        &kp UP_ARROW    &kp PG_UP        &none  &kp PSCRN
-&trans  &mkp MB4  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none        &mmv MOVE_DOWN   &mkp LCLK  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none  &kp PAUSE_BREAK
-&trans  &none     &none           &none           &none            &none        &mmv MOVE_LEFT   &mkp RCLK  &kp END         &none           &kp PG_DN        &none  &kp INS
-                  &kp C_MUTE      &mkp MCLK       &mkp LCLK        &mkp RCLK    &mmv MOVE_RIGHT  &trans     &none           &none
-                                                                                &mkp LCLK
+&kp LA(F4)          &mkp MB5  &none           &mmv MOVE_UP    &none            &none        &mmv MOVE_UP     &mkp MCLK  &kp HOME                &kp UP_ARROW             &kp PG_UP        &none  &kp PSCRN
+&kp LG(DOWN_ARROW)  &mkp MB4  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none        &mmv MOVE_DOWN   &mkp LCLK  &kp LEFT_ARROW          &kp DOWN_ARROW           &kp RIGHT_ARROW  &none  &kp PAUSE_BREAK
+&kp LG(UP_ARROW)    &none     &none           &none           &none            &none        &mmv MOVE_LEFT   &mkp RCLK  &kp END                 &none                    &kp PG_DN        &none  &kp INS
+                              &kp C_MUTE      &mkp MCLK       &mkp LCLK        &mkp RCLK    &mmv MOVE_RIGHT  &trans     &kp LS(LG(LEFT_ARROW))  &kp LS(LG(RIGHT_ARROW))
+                                                                                            &mkp LCLK
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -119,10 +119,10 @@
             label = "KB&CTRL";
             display-name = "KB&CTRL";
             bindings = <
-&bt BT_CLR       &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_PRV       &bt BT_NXT         &mmv MOVE_UP     &kp C_BRI_MAX  &kp C_MUTE    &kp C_RW  &none  &none  &none
-&rgb_ug RGB_ON   &rgb_ug RGB_EFF  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI    &mmv MOVE_DOWN   &kp C_BRI_DEC  &kp C_VOL_DN  &kp C_PP  &none  &none  &none
-&rgb_ug RGB_OFF  &rgb_ug RGB_EFR  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD    &mmv MOVE_LEFT   &kp C_BRI_INC  &kp C_VOL_UP  &kp C_FF  &none  &none  &none
-                                  &kp C_MUTE       &trans           &trans           &trans             &mmv MOVE_RIGHT  &trans         &none         &trans
+&bt BT_CLR       &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_PRV       &bt BT_NXT         &mmv MOVE_UP     &none   &kp C_MUTE    &kp C_RW  &none  &none  &none
+&rgb_ug RGB_ON   &rgb_ug RGB_EFF  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI    &mmv MOVE_DOWN   &none   &kp C_VOL_DN  &kp C_PP  &none  &none  &none
+&rgb_ug RGB_OFF  &rgb_ug RGB_EFR  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD    &mmv MOVE_LEFT   &none   &kp C_VOL_UP  &kp C_FF  &none  &none  &none
+                                  &kp C_MUTE       &trans           &trans           &trans             &mmv MOVE_RIGHT  &trans  &none         &trans
                                                                                                         &mkp LCLK
             >;
 
