@@ -80,7 +80,7 @@
 &kp CAPS       &kp F1  &kp F2      &kp F3   &kp F4   &none        &mmv MOVE_UP     &kp PERCENT          &kp N7  &kp N8   &kp N9  &kp MINUS  &kp BSPC
 &kp LG(SPACE)  &kp F5  &kp F6      &kp F7   &kp F8   &mkp LCLK    &mmv MOVE_DOWN   &kp C_AL_CALCULATOR  &kp N4  &kp N5   &kp N6  &kp PLUS   &kp SLASH
 &kp LC(SPACE)  &kp F9  &kp F10     &kp F11  &kp F12  &mkp RCLK    &mmv MOVE_LEFT   &none                &kp N1  &kp N2   &kp N3  &kp ENTER  &kp ASTRK
-                       &kp K_MUTE  &trans   &none    &trans       &mmv MOVE_RIGHT  &trans               &kp N0  &kp DOT
+                       &kp C_MUTE  &trans   &none    &trans       &mmv MOVE_RIGHT  &trans               &kp N0  &kp DOT
                                                                   &mkp LCLK
             >;
 
@@ -94,7 +94,7 @@
 &none  &kp EXCL  &kp AT      &kp HASH  &kp DLLR  &kp PRCNT    &mmv MOVE_UP     &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &none
 &none  &none     &none       &none     &none     &mkp LCLK    &mmv MOVE_DOWN   &kp GRAVE  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &none
 &none  &none     &none       &none     &none     &mkp RCLK    &mmv MOVE_LEFT   &kp TILDE  &kp UNDER  &kp PLUS   &kp LBRC  &kp RBRC  &none
-                 &kp K_MUTE  &none     &none     &trans       &mmv MOVE_RIGHT  &trans     &trans     &trans
+                 &kp C_MUTE  &none     &none     &trans       &mmv MOVE_RIGHT  &trans     &trans     &trans
                                                               &mkp LCLK
             >;
 
@@ -108,7 +108,7 @@
 &trans  &mkp MB5  &none           &mmv MOVE_UP    &none            &none        &mmv MOVE_UP     &mkp MCLK  &kp HOME        &kp UP_ARROW    &kp PG_UP        &none  &kp PSCRN
 &trans  &mkp MB4  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none        &mmv MOVE_DOWN   &mkp LCLK  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none  &kp PAUSE_BREAK
 &trans  &none     &none           &none           &none            &none        &mmv MOVE_LEFT   &mkp RCLK  &kp END         &none           &kp PG_DN        &none  &kp INS
-                  &kp K_MUTE      &mkp MCLK       &mkp LCLK        &mkp RCLK    &mmv MOVE_RIGHT  &trans     &none           &none
+                  &kp C_MUTE      &mkp MCLK       &mkp LCLK        &mkp RCLK    &mmv MOVE_RIGHT  &trans     &none           &none
                                                                                 &mkp LCLK
             >;
 
@@ -119,14 +119,14 @@
             label = "KB&CTRL";
             display-name = "KB&CTRL";
             bindings = <
-&bt BT_CLR       &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_PRV       &bt BT_NXT         &mmv MOVE_UP     &kp C_BRIGHTNESS_MAXIMUM  &kp C_MUTE    &kp C_RW  &none  &none  &none
-&rgb_ug RGB_ON   &rgb_ug RGB_EFF  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI    &mmv MOVE_DOWN   &kp C_BRIGHTNESS_DEC      &kp C_VOL_DN  &kp C_PP  &none  &none  &none
-&rgb_ug RGB_OFF  &rgb_ug RGB_EFR  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD    &mmv MOVE_LEFT   &kp C_BRIGHTNESS_INC      &kp C_VOL_UP  &kp C_FF  &none  &none  &none
-                                  &rgb_ug RGB_OFF  &trans           &trans           &trans             &mmv MOVE_RIGHT  &trans                    &none         &trans
+&bt BT_CLR       &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_PRV       &bt BT_NXT         &mmv MOVE_UP     &kp C_BRI_MAX  &kp C_MUTE    &kp C_RW  &none  &none  &none
+&rgb_ug RGB_ON   &rgb_ug RGB_EFF  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI    &mmv MOVE_DOWN   &kp C_BRI_DEC  &kp C_VOL_DN  &kp C_PP  &none  &none  &none
+&rgb_ug RGB_OFF  &rgb_ug RGB_EFR  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD    &mmv MOVE_LEFT   &kp C_BRI_INC  &kp C_VOL_UP  &kp C_FF  &none  &none  &none
+                                  &kp C_MUTE       &trans           &trans           &trans             &mmv MOVE_RIGHT  &trans         &none         &trans
                                                                                                         &mkp LCLK
             >;
 
-            sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
     };
 };
