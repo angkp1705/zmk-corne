@@ -148,7 +148,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
   super:
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Alt+ F4
   - '&mkp MB5'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
@@ -161,7 +161,7 @@ layers:
   - PG UP
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:printer-outline$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Gui+ $$mdi:arrow-down-bold$$
   - '&mkp MB4'
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
@@ -174,7 +174,7 @@ layers:
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - PAUSE BREAK
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Gui+ $$mdi:arrow-up-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -193,8 +193,8 @@ layers:
   - $$mdi:mouse-right-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - {type: held}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Sft+Gui+ $$mdi:arrow-left-bold$$
+  - Sft+Gui+ $$mdi:arrow-right-bold$$
   - $$mdi:mouse-left-click-outline$$
   KB&CTRL:
   - $$mdi:bluetooth-off$$
@@ -204,7 +204,7 @@ layers:
   - {h: '$$mdi:arrow-up-bold$$', s: '$$mdi:bluetooth-connect$$'}
   - {h: '$$mdi:arrow-down-bold$$', s: '$$mdi:bluetooth-connect$$'}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - BRI MAX
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:volume-off$$
   - RW
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -217,7 +217,7 @@ layers:
   - RGB HUI
   - RGB SAI
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - $$mdi:brightness-7$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:volume-low$$
   - $$mdi:play-pause$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -230,7 +230,7 @@ layers:
   - RGB HUD
   - RGB SAD
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - BRI INC
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:volume-high$$
   - FF
   - {t: '$$mdi:minus-circle-outline$$', type: none}
