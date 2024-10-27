@@ -1,4 +1,4 @@
-layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3}
+layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x6_3}
 layers:
   default:
   - $$mdi:keyboard-tab$$
@@ -209,7 +209,7 @@ layers:
   - RW
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - OUT BLE
   - RGB ON
   - RGB EFF
   - RGB BRI
@@ -222,7 +222,7 @@ layers:
   - $$mdi:play-pause$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - OUT USB
   - RGB OFF
   - RGB EFR
   - RGB BRD
