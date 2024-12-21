@@ -150,9 +150,9 @@ layers:
   MS&NAV:
   - Alt+F4
   - '&mkp MB5'
-  - $$mdi:pan-left$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - $$mdi:pan-up$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-scroll-wheel$$
@@ -176,9 +176,9 @@ layers:
   - PAUSE BREAK
   - Gui+$$mdi:arrow-up-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:pan-right$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:pan-down$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-right-click-outline$$
